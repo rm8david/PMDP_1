@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/login_background">
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculadora_de_salario_neto"
+        android:background="@color/cream"
+        android:textColor="@color/bright"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:elegantTextHeight="true"
+        android:fontFamily="sans-serif-condensed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01"/>
+
+    <TextView
+        android:id="@+id/bruto"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:background="@color/warm"
+        android:text="@string/salario_bruto"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <EditText
+        android:id="@+id/input_bruto"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:background="@color/cream"
+        android:hint="@string/anual"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/bright"
+        android:textColorHighlight="@color/bright"
+        android:textColorHint="@color/bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+
+    <TextView
+        android:id="@+id/pagas"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:background="@color/warm"
+        android:text="@string/numero_de_pagas"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <Spinner
+        android:id="@+id/spinner_pagas"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:background="@color/cream"
+        android:contentDescription="@string/numero_de_pagas"
+        android:entries="@array/opciones_pagas"
+        android:outlineAmbientShadowColor="@color/bright"
+        android:outlineSpotShadowColor="@color/bright"
+        android:popupBackground="@color/white"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245" />
+
+    <TextView
+        android:id="@+id/edad"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:background="@color/warm"
+        android:text="@string/edad"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <EditText
+        android:id="@+id/input_edad"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:background="@color/cream"
+        android:hint="40"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/bright"
+        android:textColorHighlight="@color/cream"
+        android:textColorHint="@color/bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/categoria_profesional"
+        android:layout_width="120sp"
+        android:layout_height="60sp"
+        android:background="@color/warm"
+        android:text="@string/categoria_profesional"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <Spinner
+        android:id="@+id/spinner_categoria"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:background="@color/cream"
+        android:entries="@array/opciones_categorias"
+        android:outlineAmbientShadowColor="@color/cream"
+        android:outlineSpotShadowColor="@color/cream"
+        android:popupBackground="@color/white"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <TextView
+        android:id="@+id/discapacidad"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:background="@color/warm"
+        android:text="@string/discapacidad"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59" />
+
+
+    <Spinner
+        android:id="@+id/spinner_discapacidad"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:background="@color/cream"
+        android:entries="@array/opciones_discapacidad"
+        android:outlineAmbientShadowColor="@color/cream"
+        android:outlineSpotShadowColor="@color/cream"
+        android:popupBackground="@color/white"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59" />
+
+    <TextView
+        android:id="@+id/estado_civil"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:background="@color/warm"
+        android:text="estado civil"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.70" />
+
+    <Spinner
+        android:id="@+id/spinner_estado_civil"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:background="@color/cream"
+        android:entries="@array/estado_civil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.70" />
+
+    <Button
+        android:id="@+id/recoger_datos_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/oscuro"
+        android:text="Calcular"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numero_hijos"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/numero_hijos"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:background="@color/warm"
+        android:text="Número de hijos"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintVertical_bias="0.825"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_hijos"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="120dp"
+        android:background="@color/cream"
+        android:hint="0"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/bright"
+        android:textColorHighlight="@color/cream"
+        android:textColorHint="@color/bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="6dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="196dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

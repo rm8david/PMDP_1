@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">PMDP_1</string>
+    <string name="calculadora_de_salario_neto">CALCULADORA DE SALARIO NETO</string>
+    <string name="salario_bruto">Salario bruto:</string>
+    <string name="numero_de_pagas">Numero de pagas:</string>
+    <string name="edad">Edad:</string>
+    <string name="categoria_profesional">Categoria profesional:</string>
+    <string name="discapacidad">Discapacidad:</string>
+    <string name="estado_civil">Estado civil</string>
+    <string name="personas_a_tu_cargo">Personas a tu cargo</string>
+    <string name="anual">€/año</string>
+    <string-array name="opciones_pagas">
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+    </string-array>
+    <string-array name="opciones_categorias">
+        <item>Ingenieros y licenciados</item>
+        <item>Ingenieros tecnicos</item>
+        <item>Ayudantes no titulados</item>
+        <item>Jefes administrativos y de taller</item>
+        <item>Oficiales administrativos</item>
+        <item>Oficiales de primera y segunda</item>
+        <item>Peones</item>
+    </string-array>
+    <string-array name="opciones_discapacidad">
+        <item>Sin discapacidad</item>
+        <item>33% discapacidad</item>
+        <item>65% discapacidad</item>
+
+    </string-array>
+    <string-array name="estado_civil">
+        <item>soltero</item>
+        <item>casado</item>
+        <item>divorciado</item>
+        <item>viudo</item>
+    </string-array>
+
+</resources>
